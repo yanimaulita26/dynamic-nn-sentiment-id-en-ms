@@ -1,0 +1,65 @@
+{
+  "mbert": {
+    "model": "mBERT-static",
+    "accuracy": 0.8027210884353742,
+    "f1_macro": 0.7825217478252174,
+    "latency_ms_mean": 11.507136790047904,
+    "latency_ms_std": 1.8366530622556656
+  },
+  "deebert": {
+    "model": "DeeBERT",
+    "accuracy": 0.7727891156462585,
+    "f1_macro": 0.719648261291612,
+    "avg_exit_layer": 9.293877551020408,
+    "latency_ms_mean": 11.70776245170953,
+    "latency_ms_std": 2.1693557959526863
+  },
+  "pabee": {
+    "model": "PABEE",
+    "accuracy": 0.6489795918367347,
+    "f1_macro": 0.3935643564356436,
+    "avg_exit_layer": 3.0,
+    "latency_ms_mean": 10.675602866670605,
+    "latency_ms_std": 1.7830629955474038
+  },
+  "fastbert": {
+    "model": "FastBERT",
+    "accuracy": 0.7727891156462585,
+    "f1_macro": 0.719648261291612,
+    "avg_exit_layer": 9.742857142857142,
+    "latency_ms_mean": 11.902207530613783,
+    "latency_ms_std": 1.8392685897677745
+  },
+  "dynamic_nn": {
+    "model": "DynamicNN-ACT",
+    "accuracy": 0.745578231292517,
+    "f1_macro": 0.722962962962963,
+    "avg_exit_layer": 2.238095238095238,
+    "latency_ms_mean": 11.010157023125418,
+    "latency_ms_std": 1.7707620024493742
+  },
+  "dynamic_nn_ablation": {
+    "model": "DynamicNN-noACT(ablation)",
+    "accuracy": 0.7959183673469388,
+    "f1_macro": 0.7648932903423922,
+    "avg_exit_layer": 12.0,
+    "latency_ms_mean": 9.928125185035155,
+    "latency_ms_std": 1.053800147596428
+  },
+  "significance_dnn_vs_mbert": {
+    "paired_t_test": {
+      "statistic": -0.8067515009539774,
+      "p_value": 0.4204509019168211
+    }
+  },
+  "_metadata": {
+    "language": "ms",
+    "schema": "2-class (positive/negative)",
+    "n_train": 2938,
+    "n_test": 735,
+    "classes": [
+      "negative",
+      "positive"
+    ]
+  }
+}
